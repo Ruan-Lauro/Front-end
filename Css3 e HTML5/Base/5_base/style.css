@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    overflow: scroll;
+    padding: 24px;
+    width: 300px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+    margin: auto;
+}
+
+.container .item{
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+
+}
+
+/* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+    width:0px;
+    height:0px;
+    }
+     
+    /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+    ::-webkit-scrollbar-track {
+    background:#333;
+    }
+     
+    /* aqui é a alça da barra, que demonstra a altura que você está na página
+    estou colocando uma cor azul clara nela*/
+    ::-webkit-scrollbar-thumb {
+    background: #2e9dd8;
+    }
+
+#pri{
+    background-color: blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+#seg{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+#ter{
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
